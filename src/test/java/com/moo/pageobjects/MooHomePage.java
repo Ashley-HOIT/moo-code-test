@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 public class MooHomePage extends PageObject {
 
     private final String PAGE_TITLE = "Custom Online Business Printing & Design | MOO";
-    private final String CONTACT_INFOMRATION = "+44 20 8629 1415";
+    private final String CONTACT_INFORMATION = "+44 20 8629 1415";
 
     @FindBy(id = "query")
     private WebElement query;
@@ -70,8 +70,8 @@ public class MooHomePage extends PageObject {
         }
 
         public boolean contactInformationIsDisplayed() {
-            waitForTextToAppear(CONTACT_INFOMRATION);
-            return containsText(CONTACT_INFOMRATION);
+            waitForTextToAppear(CONTACT_INFORMATION);
+            return containsText(CONTACT_INFORMATION);
         }
     }
 }
